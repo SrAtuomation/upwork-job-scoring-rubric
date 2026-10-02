@@ -1,0 +1,13 @@
+signal,points,score,notes
+Payment method verified,1,,
+Client hire rate above 50%,1,,
+Client has spent more than $1000,1,,
+Scope is specific enough to estimate,1,,
+Budget is consistent with scope,2,,
+Fewer than 15 proposals submitted,1,,
+Posted within 48 hours,1,,
+Direct technical fit,2,,
+Client has left prior reviews,1,,
+No request for free work,1,,
+TOTAL,12,,
+THRESHOLD,7,,

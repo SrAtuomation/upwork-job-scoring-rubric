@@ -1,0 +1,24 @@
+{
+  "name": "Upwork job scoring rubric",
+  "version": "1.0",
+  "maximum_score": 12,
+  "starting_threshold": 7,
+  "signals": [
+    {"id": "payment_verified", "label": "Payment method verified", "points": 1},
+    {"id": "hire_rate", "label": "Client hire rate above 50%", "points": 1},
+    {"id": "client_spend", "label": "Client has spent more than $1,000", "points": 1},
+    {"id": "scope_specific", "label": "Scope is specific enough to estimate", "points": 1},
+    {"id": "budget_fit", "label": "Budget is consistent with scope", "points": 2},
+    {"id": "proposal_count", "label": "Fewer than 15 proposals submitted", "points": 1},
+    {"id": "freshness", "label": "Posted within 48 hours", "points": 1},
+    {"id": "technical_fit", "label": "Direct technical fit", "points": 2},
+    {"id": "reviews_left", "label": "Client has left prior reviews", "points": 1},
+    {"id": "no_free_work", "label": "No request for free work", "points": 1}
+  ],
+  "decision": {
+    "apply_when": "score >= starting_threshold",
+    "fail_closed": true,
+    "parse_failure_score": 0
+  },
+  "disclaimer": "Independent decision tool, not Upwork policy or an Upwork-endorsed product."
+}
